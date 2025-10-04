@@ -15,6 +15,5 @@ public static class Consts
     
     public const string TimerPassedTimeSaveFileName = $"{nameof(ModName)}_LastTimerTimePassed.txt";
 
-    public static readonly Lazy<string> TimerPassedTimeSaveFilePath = new(() => 
-        Path.Combine(Paths.ConfigPath, TimerPassedTimeSaveFileName));
+    public static readonly Lazy<string> TimerPassedTimeSaveFilePath = new(() => Path.Combine(Paths.ConfigPath, TimerPassedTimeSaveFileName));
 }

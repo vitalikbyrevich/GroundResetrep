@@ -1,5 +1,3 @@
-using System.Globalization;
-using BepInEx.Configuration;
 using GroundReset.Patch;
 
 namespace GroundReset;
