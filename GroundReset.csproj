@@ -87,4 +87,9 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Patch\SendStartMessage.cs" />
+      <None Include="Patch\SendStartMessage.cs" />
+    </ItemGroup>
 </Project>
