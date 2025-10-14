@@ -112,10 +112,8 @@ public static class Reseter
             var distanceSquared = dx * dx + dz * dz;
             var maxDistance = radius + checkRadius;
             
-            if (distanceSquared <= maxDistance * maxDistance)
-                return true;
+            if (distanceSquared <= maxDistance * maxDistance) return true;
         }
-        
         return MarketplaceTerritorySystem.PointInTerritory(pos);
     }
 

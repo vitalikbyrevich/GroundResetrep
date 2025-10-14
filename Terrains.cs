@@ -391,8 +391,7 @@ public static class Terrains
                 var index2 = index1 - num4;
                 if (num4 == Reseter.HeightmapWidth)
                     index2 -= Reseter.HeightmapWidth;
-                if (index1 > 0 && (index1 - num4) % Reseter.HeightmapWidth == 0 && (index1 + 1 - num5) % Reseter.HeightmapWidth == 0)
-                    --index2;
+                if (index1 > 0 && (index1 - num4) % Reseter.HeightmapWidth == 0 && (index1 + 1 - num5) % Reseter.HeightmapWidth == 0) --index2;
                 chunkData.m_paintMask[index1] = colorArray[index2];
                 chunkData.m_modifiedPaint[index1] = flagArray[index2];
             }

@@ -14,8 +14,7 @@ public static class Helper
     public static bool IsServer(bool logIsShouldBeOnServerOnly = false)
     {
         var gameState = GetGameServerClientState();
-        if (logIsShouldBeOnServerOnly && gameState is GameServerClientState.Client)
-            LogError($"{nameof(ModName)} is fully server-side, do not install it on clients");
+        if (logIsShouldBeOnServerOnly && gameState is GameServerClientState.Client) LogError($"{nameof(ModName)} is fully server-side, do not install it on clients");
         return gameState is GameServerClientState.Server;
     }
 
